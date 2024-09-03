@@ -1,3 +1,5 @@
+/*OSCAR MAURICIO SANCHEZ APARICIO U20241028*/
+
 
 console.log("menu de opciones");
 console.log("1. resultado de notas");
@@ -8,7 +10,7 @@ let opcion = 1;
 switch (opcion) {
     case 1:
         console.log("has ingresado opcion 1");
-        
+
          let nota = 8.0;
 
         if (nota >= 6.0 && nota <= 10.0) {
