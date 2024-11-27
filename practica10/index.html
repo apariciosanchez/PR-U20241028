@@ -1,0 +1,42 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de Temperatura</title>
+    <style>
+        .converter-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        input,button,select{
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Convertidor de Temperatura</h1>
+        
+        <!-- Menu de opción de temperatura -->
+        <select id="tipo-conversion">
+            <option value="1">Celsius a Fahrenheit</option>
+            <option value="2">Fahrenheit a Celsius</option>
+        </select>
+
+        <!-- Campo de entrada de temperatura -->
+        <input type="number" id="temperatura" placeholder="Ingrese la temperatura">
+
+        <!-- Botón de convertir -->
+        <button onclick="convertir()">Convertir</button>
+
+        <!-- Resultado -->
+        <h2 id="resultado">Resultado:</h2>
+
+        <script src="/practica10/convertidor.js"></script>
+    </div>
+</body>
+</html>
