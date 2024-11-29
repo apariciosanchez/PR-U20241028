@@ -1,0 +1,34 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practica html y javascrip</title>
+</head>
+<body>
+    <h1>practica de HTML con javaScrip</h1>
+    <p>Interactua con los elementos de la pagina usando javaScrip</p>
+
+    
+    <button onclick="mostrarMensaje()">has clic aqui</button>
+
+    <p id="mensaje"></p>
+
+    <label for="nombre">escribe tu nombre</label>
+    <input type="text" id="nombre">
+    <button onclick="saludar()">saludar</button>
+
+    <p id="saludar"></p> 
+
+    <script>
+    function mostrarMensaje() {
+        document.getElementById("mensaje").innerText = "hola has clic aqui.";
+    }
+
+    function saludar() {
+        const nombre = document.getElementById("nombre").value;
+        document.getElementById("saludar").innerText = "hola, " + nombre + "! Bienvenido/a.";
+    }
+    </script>
+</body>
+</html>
